@@ -1,0 +1,33 @@
+Day 2 | Session 1
+Task 1: Create a Windows Virtual Machine in Azure and connect it via RDP.
+
+________________________________________________________________________________________________________________________________________________________________________________________
+
+Steps to create a Windows Virtual Machine in Azure is given below:
+
+Step 1: Navigate to Virtual Machines in menu bar [Located in top left corner of home] (or) you can search Virtual machines in Search bar.
+Step 2: Select Azure Virtual Machine.
+Step 3: Enter the following details:
+      -> Resource Group: you can create a new one or select the existing one.   [ your choice ]
+      -> Virtual Machine name
+      -> Region
+      -> Image
+      -> Size
+      -> In administrator account : enter Username, password and Confirm Password.
+Step 4: Leave Others as it is.
+Step 5: Got to "REVIEW + CREATE" and then click on "CREATE" option.
+Step 6: Once deployment is complete, you can click on go to resource to view the Virtual Machine.
+
+_______________________________________________________________________________________________________________________________________________________________________________________
+
+Steps to connect the Windows VM via RDP is given below:
+
+Step 1: Click on "CONNECT" which is located on top left in Resource page.
+Step 2: Now click on "DOWNLOAD THE RDP FILE" option for downloading the file.
+Step 3: After downloading the file, open the file.
+Step 4: Click on "CONNECT" to Windows VM.
+Step 5: Your RD is ready.
+
+
+
+
