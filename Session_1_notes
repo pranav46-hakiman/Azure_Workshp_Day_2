@@ -1,0 +1,121 @@
+Session 1 | Day 2
+__________________________________________________________________________________________________________________________________________________________________________________________________________
+
+AZURE VIRTUAL NETWORK:
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Agenda:
+
+1. Azure Virtual Network:
+2. Internet Protocol [IP]:
+3. CIDR:
+4. Understanding CIDR - IPv4:
+5. VNET:
+6. Bastion Hosts:
+7. NAT Gateway:
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________
+
+-> Azure Virtual Network:
+
+Networking on azure allows you to connect to cloud and on-premises infrastructure and services. Azure VM enables resources such as Azure VMs to securely communicate with each other, the internet, and 
+on-premesises networks.
+A Content Delivery Network [CDN] is a distributed network of servers that get content to users in their local regions to minimize latency.
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________
+
+=> Internet Protocol:
+
+Internet Protocol [IP] governs how data is transmitted across the internet. They are two types:
+1. IPv4: It uses 32-bit addresses, it is a standalone specfication.
+2. IPv6: It allows communication to take place over the network.
+
+_________________________________________________________________________________________________________________________________________________________________________________________________________
+
+-> CIDR:
+CIDR stands for Classless Inter-Domain Routing. It is a method for allocating IP addresses. It is the most common method used in Azure cloud. Also used in SG rules and networking in general.
+
+A CIDR has two components: Base IP
+                           Subnet Mask
+
+Base IP: It represents an IP which contains in range.
+         Example: 10.0.0.0, 192.168.0.0
+
+Subnet masks: It defines how many bits can change in the IPs.
+              Example: /0,/24,/32
+
+NOTE: A Subnet Mask allows part of IP to get additional next vakues from base IP.
+_____________________________________________________________________________________________________________________________________________________________________________________________________
+
+-> Public vs Private IP [IPv4]:
+
+Public: Each public IP address is unique worldwide, allowing devices on the internet to communicate with each other.
+Private: Private IP addresses are intended for use within a local network, such as a home or office network.
+
+Examples:
+Public IP: 2001:db8:85a3:0000:0000:8a2e:0370:7334 IPv6 one.
+Private IP: 192.168.0.0/16
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________
+
+-> VNET:
+It is cloud based network environment in Microsoft Azure, where it allows one to create and manage own isolated network envirnoment in the cloud, which can further segemt the network into one or 
+more subnets.
+We can also create NSGs, create inbound and outbound rules to control the network acess.
+
+VNET Peering:
+It connects Virtual Machines within the same Azure region.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________
+
+-> Bastion Hosts:
+
+We can Use a Bastion Host to Secureshell [SSH] into our private EC2 instances. Bastion Hosts must allow the inbounds from the internet, and Bastion is in the public subnet.
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________
+
+-> NAT Gateway:
+
+NATGW is created at in a specific availability zones, uses an elastic IP. 
+It can't be used by EC2 instances in the same subnet, it can be used from different subset.
+There is no SGs to manage.
+
+________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IP is the fundamental protocol that governs how data is transmitted across the internet. 
+
+
+
+
